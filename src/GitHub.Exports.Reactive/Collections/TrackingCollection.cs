@@ -46,7 +46,6 @@ namespace GitHub.Collections
             Listen(source);
         }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Globalization", "CA1305:SpecifyIFormatProvider", MessageId = "System.String.Format(System.String,System.Object,System.Object,System.Object)")]
         public ITrackingCollection<T> Listen(IObservable<T> obs)
         {
             source = obs
